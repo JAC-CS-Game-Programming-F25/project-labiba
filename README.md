@@ -1,70 +1,171 @@
 # Final Project
 
--   [ ] Read the [project requirements](https://vikramsinghmtl.github.io/420-5P6-Game-Programming/project/requirements).
--   [ ] Replace the sample proposal below with the one for your game idea.
--   [ ] Get the proposal greenlit by Vik.
--   [ ] Place any assets in `assets/` and remember to update `src/config.json`.
--   [ ] Decide on a height and width inside `src/globals.js`. The height and width will most likely be determined based on the size of the assets you find.
--   [ ] Start building the individual components of your game, constantly referring to the proposal you wrote to keep yourself on track.
--   [ ] Good luck, you got this!
+- [ ] Read the [project requirements](https://vikramsinghmtl.github.io/420-5P6-Game-Programming/project/requirements).
+- [ ] Replace the sample proposal below with the one for your game idea.
+- [ ] Get the proposal greenlit by Vik.
+- [ ] Place any assets in `assets/` and remember to update `src/config.json`.
+- [ ] Decide on a height and width inside `src/globals.js`. The height and width will most likely be determined based on the size of the assets you find.
+- [ ] Start building the individual components of your game, constantly referring to the proposal you wrote to keep yourself on track.
+- [ ] Good luck, you got this!
 
 ---
 
-# Sample Proposal - Pokémon the Trading Card Game
-
-> [!note]
-> This was taken from a project I did in university so the scope is **much** larger than what I'm expecting from you in terms of number of features!
+# Sample Proposal - Fragments of Lumina
 
 ## ✒️ Description
 
-In this turn-based battle card game, players assume the role of a Pokémon trainer and use their Pokémon to battle their opponent's Pokémon. Players play Pokémon to the field and attack their opponent's Pokémon. A Pokémon that has sustained enough damage is Knocked Out, and the player who knocked it out draws a Prize card. There are usually six Prize cards, and the primary win condition is to draw all of them. Other ways to win are by knocking out all the Pokémon the opponent has on the field so that the opponent has none left, or if at the beginning of their opponent's turn there are no cards left to draw in the opponent's deck.
+Fragments of Lumina is a narrative-driven 2D adventure game where the player awakens in a blank void with only a floating light named Lumie as their guide. The player soon discovers that they have lost their memories - including the memory of their sister, who becomes the first main NPC and the player's save point. The world has been shattered into three Soul Fragments, each protected by corrupted guardians. To restore the world — and the player’s identity — players must explore the map, uncover secrets, fight monsters and bosses, and make choices that can save or doom key characters.
 
 ## 🕹️ Gameplay
 
-Players begin by having one player select heads or tails, and the other flips a coin; the winner of the coin flip will decide who goes first or second. The player going first cannot attack their first turn, unless the card says otherwise. (Dice may be used in place of coins, with even numbers representing heads and odd numbers representing tails). Players then shuffle their decks and draw seven cards, then play one Basic Pokémon onto the field. This Pokémon is known as the Active Pokémon and is usually the one that attacks and receives damage. If a player does not have any Basic Pokémon, they must shuffle and draw a new hand, and the opponent may draw one additional card. Once both players have at least one Basic Pokémon, they can play up to five more Basic Pokémon onto their "Bench" (representing the maximum-carry limit of six from the video games). Players then take the top six cards of their deck and place them to the side as Prize Cards. Play then begins with the player who won the coin flip.
+Game Start:
+Player awakens in a blank void with Lumie (a flying light companion).
+After the intro conversation, screen fades to black -> player wakes up in a new world with the sister Npc
 
-Play alternates between players who may take several actions during their turn, including playing new Basic Pokémon, evolving their Pokémon, playing Trainer cards and Energy cards, and using Pokémon Abilities. A player may also retreat their Active Pokémon, switching the Active Pokémon with one on the Bench. At the end of their turn, a player may use one of their Active Pokémon's attacks, provided the prerequisite amount and types of Energy are attached to that Pokémon. Effects from that attack are then activated and damage may be placed on the Defending Pokémon; some attacks simply have effects but do not do damage. Damage may be modified depending on whether the defender has a weakness or a resistance to the attacker's Pokémon type. If the final damage exceeds the defending Pokémon's HP, it is Knocked Out, and the active player takes a prize card and ends their turn.
+Core Gameplay loop:
 
-This implementation of _Pokémon the Trading Card Game_ is a single player experience with an AI. The game is played primarily with the mouse to interact with the cards and general GUI. The players can optionally hit `M` on their keyboard to mute all game sounds.
+1.  Explore the semi-open world map
+2.  Battle enemies using action-based combat
+3.  Collect items, keys, and lore
+4.  Talk to NPCs to unlock quests
+5.  Find Soul Fragments
+6.  Fight bosses guarding the fragments
+7.  Return fragments to the Lumina Shrine
+8.  Unlock new areas
+9.  Reach the final confrontation
+
+Movement: Arrow Keys
+
+- Interact / Talk: E
+- Open Inventory: I
+- Pause Menu: Esc
+- Confirm: Enter
+- Cancel: Backspace
+
+Quest Structure
+Fragment 1 — The Lost Beast
+
+- Player explores the forest ruins
+- Fragment 1 is hidden in a monster’s lair in a corner of the map
+- The sister hints at it but doesn’t force a quest lock
+- Beat the Beast of Sound (Boss 1, Doubt)
+- Obtain Fragment 1
+
+Fragment 2 — The Door of Echoes
+NPC requirements:
+
+- Talk to Elder Rowan
+- Talk to Scout Mira
+- Find the Echo Key
+- Open the sealed ruin door
+- Fight mid-level enemies inside
+- Find Fragment 2
+
+Returning to sister:
+
+- Sister is gone
+- New NPC says that she was taken
+- This unlocks the arena area
+- Can choose to fight Corrupted Guardian (Boss 2, Anxiety)
+
+SPECIAL SAVE PATH:
+If the player performs a hidden action earlier ( collecting the Pure Light Seeds before Fragment 2 and bringing it back to the sister), the sister does not get taken and the player skips Boss 2.
+
+Fragment 3 — The Heart of Lumina
+
+- Meet NPC Sage Elara, who guides you to the Shattered Peak
+- Final boss: The Hollow Self (Gloom)
+- Win -> obtain the final fragment
+
+Endgame & Ending
+After assembling all three fragments:
+
+- Player regains memories
+- Return to his original world
+
+Multiple endings depending on sister’s fate:
+
+- True Ending: Sister saved (Won final fight and saved the sister)
+- Bittersweet Ending: Sister lost but world restored (Didnt save the sister but won the final battle)
+- Dark Ending: Player dies for good. (If the player lose the final battle and didnt save the sister)
+
+Objects:
+
+1. Lumina Fruit
+   Type: Healing item
+   Who gives it: The sister NPC
+
+- Gameplay Effect:
+  Heals 25–35% HP
+  Very limited, boosts early survivability
+
+2. Echo Charm
+   Type: Temporary defense boost (2 turn damage reduction)
+   Given by: Elder Rowan during Fragment 2’s quest
+
+3. Mira's Scout Bandage
+   Type: Small healing over time (regenerates small HP each turn)
+   Given by: Scout Mira (Fragment 2 questline NPC)
+
+- Gameplay Use:
+  Regenerates 5 HP per turn for 3 turns
+
+4. Pure Light Seed
+   Type: Key story item or Combat buff
+   Found: Hidden early
+
+- Gameplay Effect:
+  When used in combat:
+  +20% damage for the next attack
+- Story Effect
+  If returned to the sister → she is saved, and Boss 2 is skipped
+
+5. Stick
+   Type: Weapon
+   Found: On the ground randomly
+
+- Gameplay Effect:
+  Use to attack enemy without using a turn.
+
+6. Shard of Doubt
+   Type: Increase attack for one turn but hurt the player
+   Found: Beast of Sound minions drop
+
+7. Windleaf
+   Type: Combat speed boost, increase the chance of double attack in one turn
+   Found: On the ground
 
 ## 📃 Requirements
 
-> [!note]
-> This was a web project so that's why you'll see requirements about logging in and uploading data which for you is irrelevant. Focus more on the requirements describing actions taken for gameplay.
+The system shall:
 
-1. The user shall register to be able to login.
-2. The user shall login to be able to play a game.
-3. The user shall upload a valid deck file.
-4. The user shall upload a valid cards file.
-5. The user shall upload a valid abilities file.
-6. The user shall select which deck they will use in the game.
-7. The user shall select which deck the AI will use in the game.
-8. The system shall "flip a coin" to decide which player goes first.
-9. The system shall shuffle the user's deck.
-10. The system shall draw the top 7 cards from the user's deck.
-11. If the user does not have a Basic Pokémon in their hand the system shall "mulligan" until they do.
-12. Upon each mulligan, the AI shall draw a card.
-13. The user shall put one of their Basic Pokémon face down as their Active Pokémon.
-14. The user shall put up to 5 more Basic Pokémon face down on their Bench.
-15. Upon a new turn, the system shall draw a card from the deck of the current player.
-16. Upon a new turn, the system shall place the drawn card in the hand of the current player.
-17. The user shall put (up to 5 total) Basic Pokémon cards from their hand onto their Bench.
-18. The user shall Evolve their Pokémon as many times as they choose.
-19. The user shall attach an Energy card from their hand to one of their Pokémon once per turn.
-20. The user shall play Trainer cards (as many as they want, but only one Supporter card and one Stadium card per turn).
-21. The user shall Retreat their Active Pokémon once per turn.
-22. The user shall use as many Abilities as they choose.
-23. The user shall attack the opponent's Active Pokémon.
-24. After a player attacks, the system shall end their turn and start their opponent's turn.
-25. The system shall execute any "special conditions" after a turn is over.
-26. The user shall pick a Victory Card when the opposing Active Pokémon dies.
+1. Allow the player to start a new game or continue from save
+2. Load player state and object collected
+3. Spawn the player in correct scene (void → world)
+4. Display Lumie intro dialogue
+5. Unlock areas based on fragments obtained
+6. Track which NPCs the player has spoken to
+7. Track whether the sister is saved or captured
+8. Handle player inventory (keys, fragments, items)
+9. Maintain state machines for:
+   - Global game flow
+   - Enemy AI
+   - Boss phases
+   - NPC behaviors
+10. Load map zones dynamically
+11. Trigger events when entering certain areas
+12. Start boss fights when entering arenas
+13. Award fragments after bosses
+14. Update quest log
+15. Trigger alternate path if “Save Sister” conditions met
+16. Manage ending sequences based on choices
 
 ### 🤖 State Diagram
 
-> [!note]
-> Remember that you'll need diagrams for not only game states but entity states as well.
-
 ![State Diagram](./assets/images/StateDiagram.png)
+![Player State Diagram](./assets/images/PlayerStateDiagram.png)
+![NPC State Diagram](./assets/images/NPCStateDiagram.png)
+![Enemy State Diagram](./assets/images/EnemyStateDiagram.png)
 
 ### 🗺️ Class Diagram
 
@@ -75,43 +176,58 @@ This implementation of _Pokémon the Trading Card Game_ is a single player exper
 > [!note]
 > Your wireframes don't have to be super polished. They can even be black/white and hand drawn. I'm just looking for a rough idea about what you're visualizing.
 
-![Main Menu](./assets/images/Main-Menu.png)
+![Title Screen](./assets/images/Title-Screen.png)
 
--   _Let's Play_ will navigate to the main game.
--   _Upload Cards_ will navigation to the forms for uploading and parsing the data files for the game.
--   _Change Log_ will navigate the user to a page with a list of features/changes that have been implemented throughout the development of the game.
+- Start will create a new game
+- Load will load the save file if it exist.
+- Setting is where the user can change the music sound and more.
 
-![Game Board](./assets/images/Game-Board.png)
+![Fight Screen](./assets/images/Fighting-Screen.png)
 
-We want to keep the GUI as simple and clear as possible by having cards with relevant images to act as a way for the user to intuitively navigate the game. We want to implement a layout that would look like as if one were playing a match of the Pokémon Trading Card Game with physical cards in real life. Clicking on any of the cards will reveal that card's details to the player.
+The fighting screen title is very clear. The combat system is just like pokemon and omori.
+
+![Inventory Stat Screen](./assets/images/Inventory-Stat.png)
+
+When the user clicks on I in the open world, a textbox appears with Stat and Items. Depending on the user choice it will display the specific information.
 
 ### 🎨 Assets
 
-We used [app.diagrams.net](https://app.diagrams.net/) to create the wireframes. Wireframes are the equivalent to the skeleton of a web app since they are used to describe the functionality of the product and the users experience.
+I used pain to create the wireframes. Wireframes are the equivalent to the skeleton of a web app since they are used to describe the functionality of the product and the users experience.
 
-We plan on following trends already found in other trading card video games, such as Pokémon Trading Card Game Online, Hearthstone, Magic the Gathering Arena, and Gwent.
-
-The GUI will be kept simple and playful, as to make sure the game is easy to understand what each component does and is, as well as light hearted to keep to the Pokémon theme.
+I plan on following trends already found in other indies game such as omori and pokemon. I plan on having a soft fantasy vide and keep the story and combat simple.
 
 #### 🖼️ Images
 
--   Most images will be used from the well known community driven wikipedia site, [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page).
--   Especially their [Trading Card Game section](<https://bulbapedia.bulbagarden.net/wiki/Full_Art_card_(TCG)>).
+The monster and character will all come from either [Itch.io](https://itch.io/game-assets) or custom made using libre sprite.
 
 #### ✏️ Fonts
 
-For fonts, a simple sans-serif like Roboto will look quite nice. It's a font that is legible, light on storage size, and fun to keep with the theme we're going for. We also used a more cartoonish Pokemon font for the title screen.
-
--   [Pokemon](https://www.dafont.com/pokemon.font)
--   [Roboto](https://fonts.google.com/specimen/Roboto)
+- Title: Tiny5 (https://fonts.google.com/specimen/Tiny5?categoryFilters=Appearance:%2FTheme%2FPixel)
+- Dialogue/UI: Simple sans-serif like Roboto
 
 #### 🔊 Sounds
 
-All sounds were taken from [freesound.org](https://freesound.org) for the actions pertaining to cards.
+Taken from freesound.org or original:
+Bell chime (saving) (https://freesound.org/people/Fenodyrie/sounds/583947/)
 
--   [Shuffle cards](https://freesound.org/people/VKProduktion/sounds/217502/)
--   [Flip card](https://freesound.org/people/Splashdust/sounds/84322/)
+Sword slashes
+(https://freesound.org/people/ethanchase7744/sounds/441666/)
+(https://freesound.org/people/wesleyextreme_gamer/sounds/574820/)
+
+Boss roars
+(https://freesound.org/people/ShangASDFGuy123/sounds/706571/)
+(https://freesound.org/people/Ovkovko/sounds/825469/)
+
+Ambient soundscapes -
+(https://freesound.org/people/SoundsCoolio/sounds/814873/)
+(https://freesound.org/people/felix.blume/sounds/671340/)
+(https://freesound.org/people/Seth_Makes_Sounds/sounds/670039/)
+(https://freesound.org/people/Ulrich_Wehner/sounds/639976/)
 
 ### 📚 References
 
--   [Pokemon Rulebook](http://assets.pokemon.com/assets/cms2/pdf/trading-card-game/rulebook/xy8-rulebook-en.pdf)
+- Game inspiring the style
+
+* Omori
+* Hollow knight
+* Zelda
