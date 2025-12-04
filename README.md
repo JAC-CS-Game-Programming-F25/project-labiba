@@ -25,7 +25,7 @@ After the intro conversation, screen fades to black -> player wakes up in a new 
 Core Gameplay loop:
 
 1.  Explore the semi-open world map
-2.  Battle enemies using action-based combat
+2.  Battle enemies using turn-based combat
 3.  Collect items, keys, and lore
 4.  Talk to NPCs to unlock quests
 5.  Find Soul Fragments
@@ -45,7 +45,7 @@ Movement: Arrow Keys
 Quest Structure
 Fragment 1 — The Lost Beast
 
-- Player explores the forest ruins
+- Player explores the forest
 - Fragment 1 is hidden in a monster’s lair in a corner of the map
 - The sister hints at it but doesn’t force a quest lock
 - Beat the Beast of Sound (Boss 1, Doubt)
@@ -66,7 +66,7 @@ Returning to sister:
 - Sister is gone
 - New NPC says that she was taken
 - This unlocks the arena area
-- Can choose to fight Corrupted Guardian (Boss 2, Anxiety)
+- Must fight Corrupted Guardian (Boss 2, Anxiety)
 
 SPECIAL SAVE PATH:
 If the player performs a hidden action earlier ( collecting the Pure Light Seeds before Fragment 2 and bringing it back to the sister), the sister does not get taken and the player skips Boss 2.
@@ -82,12 +82,6 @@ After assembling all three fragments:
 
 - Player regains memories
 - Return to his original world
-
-Multiple endings depending on sister’s fate:
-
-- True Ending: Sister saved (Won final fight and saved the sister)
-- Bittersweet Ending: Sister lost but world restored (Didnt save the sister but won the final battle)
-- Dark Ending: Player dies for good. (If the player lose the final battle and didnt save the sister)
 
 Objects:
 
@@ -115,8 +109,8 @@ Objects:
    Found: Hidden early
 
 - Gameplay Effect:
-  When used in combat:
-  +20% damage for the next attack
+  Can only be used against Anxiety (second boss).
+  Will block Anxiety healing power helping the player win.
 - Story Effect
   If returned to the sister → she is saved, and Boss 2 is skipped
 
@@ -192,9 +186,40 @@ When the user clicks on I in the open world, a textbox appears with Stat and Ite
 
 ### 🎨 Assets
 
-I used pain to create the wireframes. Wireframes are the equivalent to the skeleton of a web app since they are used to describe the functionality of the product and the users experience.
+I used paint to create the wireframes. Wireframes are the equivalent to the skeleton of a web app since they are used to describe the functionality of the product and the users experience.
 
 I plan on following trends already found in other indies game such as omori and pokemon. I plan on having a soft fantasy vide and keep the story and combat simple.
+
+## 🎨 Map Sprite Credits
+
+Source: Szadiart, Rogue Fantasy Catacombs, Itch.io
+Link: https://szadiart.itch.io/rogue-fantasy-catacombs
+
+Used For: Caves, monster lairs, arena zone and Fragment 2 ruin interior.
+Why:
+This tileset provides darker, atmospheric dungeon and cave tiles that complement the mood of boss fights (Anxiety).
+
+Source: Penzilla, Top-Down Retro Interior, Itch.io
+Link: https://penzilla.itch.io/top-down-retro-interior
+
+Used For: House interior, cozy NPC rooms.
+
+Source: Snowhex, Pixel Plains, Itch.io
+Link: https://snowhex.itch.io/pixel-plains
+
+Used For: Calm grassland areas, early safe zones.
+Why:
+This set complements the main overworld with softer, pastel outdoor tiles. Great for emotional contrast before the world becomes more dangerous.
+
+## 🎨 Character Sprite Credits
+
+- Erisesra — Character Templates Pack  
+  https://erisesra.itch.io/character-templates-pack  
+  Used for NPCs: Sister, Elder Rowan, Scout Mira, Sage Elara.
+
+- Creativekind — Nightborne Warrior  
+  https://creativekind.itch.io/nightborne-warrior  
+  Used for boss character sprite.
 
 #### 🖼️ Images
 

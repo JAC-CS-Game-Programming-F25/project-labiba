@@ -40,9 +40,15 @@ classDiagram
         + takeDamage(amount: int)
     }
 
+    GameEntity <|-- Player
+    GameEntity <|-- Enemy
+    GameEntity <|-- NPC
+
+
     %% -------------------------
     %% Enemy Subclasses (Bosses)
     %% -------------------------
+
     class Anxiety {
         + specialAttack()
     }
@@ -58,6 +64,7 @@ classDiagram
     Enemy <|-- Anxiety
     Enemy <|-- Doubt
     Enemy <|-- Gloom
+
 
     %% -------------------------
     %% Items Hierarchy
@@ -84,6 +91,7 @@ classDiagram
     GameObject <|-- HealingItem
     GameObject <|-- BuffItem
     GameObject <|-- StoryItem
+
 
     %% -------------------------
     %% Actual Game Items
@@ -120,12 +128,12 @@ classDiagram
         + speedBoost: int
         + doubleAttackChance: float
     }
+
     class SoulFragment {
         + fragmentId: int
         + description: string
     }
 
-    Player --> SoulFragment
     HealingItem <|-- LuminaFruit
     BuffItem <|-- EchoCharm
     BuffItem <|-- MirasBandage
@@ -134,31 +142,47 @@ classDiagram
     StoryItem <|-- PureLightSeed
     GameObject <|-- Stick
 
+    Player --> SoulFragment
+
+
     %% -------------------------
-    %% Collectibles in World
+    %% Collectible
     %% -------------------------
+
     class Collectible {
         + itemType: ItemType
         + item: Item
         + pickUp(player: Player)
     }
 
-    class CollectibleFactory {
-        + createCollectible(itemType: ItemType) Collectible
-    }
-
     GameEntity <|-- Collectible
-    CollectibleFactory --> Collectible
     Player --> Collectible
+
 
     %% -------------------------
     %% Enemy Factory
     %% -------------------------
+
     class EnemyFactory {
         + createEnemy(type: EnemyType): Enemy
     }
-
     EnemyFactory --> Enemy
+
+
+    %% -------------------------
+    %% Buff Factory 
+    %% -------------------------
+
+    class BuffFactory {
+        + createBuff(type: BuffType): BuffItem
+    }
+
+    BuffFactory --> BuffItem
+    BuffFactory --> EchoCharm
+    BuffFactory --> MirasBandage
+    BuffFactory --> ShardOfDoubt
+    BuffFactory --> Windleaf
+
 
     %% -------------------------
     %% NPC Subclasses
@@ -186,9 +210,11 @@ classDiagram
     NPC <|-- ScoutMira
     NPC <|-- SageElara
 
+
     %% -------------------------
     %% Save File
     %% -------------------------
+
     class SaveFile {
         + playerHP: int
         + fragmentsCollected: int
@@ -200,22 +226,22 @@ classDiagram
     }
 
     SaveFile --> Player
-    GameEntity <|-- Player
-    GameEntity <|-- Enemy
-    GameEntity <| -- NPC
 
 
     %% -------------------------
-    %% Map  
+    %% Map
     %% -------------------------
+
     class MapZone {
         + id: string
-        + enemies: List<Enemy>
-        + collectibles: List<Collectible>
-        + exits: List<MapZone>
+        + enemies: List~Enemy~
+        + collectibles: List~Collectible~
+        + exits: List~MapZone~
     }
 
     class MapManager {
         + loadZone(id: string)
         + unloadZone(id: string)
     }
+
+    MapManager --> MapZone
