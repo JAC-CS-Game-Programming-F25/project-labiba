@@ -1,8 +1,8 @@
 # Final Project
 
-- [ ] Read the [project requirements](https://vikramsinghmtl.github.io/420-5P6-Game-Programming/project/requirements).
-- [ ] Replace the sample proposal below with the one for your game idea.
-- [ ] Get the proposal greenlit by Vik.
+- [x] Read the [project requirements](https://vikramsinghmtl.github.io/420-5P6-Game-Programming/project/requirements).
+- [x] Replace the sample proposal below with the one for your game idea.
+- [x] Get the proposal greenlit by Vik.
 - [ ] Place any assets in `assets/` and remember to update `src/config.json`.
 - [ ] Decide on a height and width inside `src/globals.js`. The height and width will most likely be determined based on the size of the assets you find.
 - [ ] Start building the individual components of your game, constantly referring to the proposal you wrote to keep yourself on track.

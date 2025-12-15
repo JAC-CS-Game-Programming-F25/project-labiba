@@ -1,0 +1,266 @@
+{
+  "playground": [
+    {
+      "location": { "x": 0, "y": 5 },
+      "destinationMap": "path",
+      "destinationDirection": "right",
+      "destinationTile": { "x": 14, "y": 5 },
+      "enterDirection": "left",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 0, "y": 6 },
+      "destinationMap": "path",
+      "destinationDirection": "right",
+      "destinationTile": { "x": 14, "y": 6 },
+      "enterDirection": "left",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+
+    {
+      "location": { "x": 14, "y": 5 },
+      "destinationMap": "town",
+      "destinationDirection": "right",
+      "destinationTile": { "x": 0, "y": 5 },
+      "enterDirection": "right",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 14, "y": 6 },
+      "destinationMap": "town",
+      "destinationDirection": "right",
+      "destinationTile": { "x": 0, "y": 6 },
+      "enterDirection": "right",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 14, "y": 7 },
+      "destinationMap": "town",
+      "destinationDirection": "right",
+      "destinationTile": { "x": 0, "y": 7 },
+      "enterDirection": "right",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 7, "y": 0 },
+      "destinationMap": "stair",
+      "destinationDirection": "up",
+      "destinationTile": { "x": 7, "y": 10 },
+      "enterDirection": "up",
+      "inTransition": "none",
+      "outTransition": "none"
+    }
+  ],
+
+  "path": [
+    {
+      "location": { "x": 14, "y": 6 },
+      "destinationMap": "playground",
+      "destinationDirection": "left",
+      "destinationTile": { "x": 0, "y": 5 },
+      "enterDirection": "right",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 14, "y": 7 },
+      "destinationMap": "playground",
+      "destinationDirection": "left",
+      "destinationTile": { "x": 0, "y": 6 },
+      "enterDirection": "right",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+
+    {
+      "location": { "x": 0, "y": 1 },
+      "destinationMap": "bossOneZone",
+      "destinationDirection": "left",
+      "destinationTile": { "x": 14, "y": 1 },
+      "enterDirection": "left",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 0, "y": 2 },
+      "destinationMap": "bossOneZone",
+      "destinationDirection": "left",
+      "destinationTile": { "x": 14, "y": 2 },
+      "enterDirection": "left",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 0, "y": 3 },
+      "destinationMap": "bossOneZone",
+      "destinationDirection": "left",
+      "destinationTile": { "x": 14, "y": 3 },
+      "enterDirection": "left",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 0, "y": 4 },
+      "destinationMap": "bossOneZone",
+      "destinationDirection": "left",
+      "destinationTile": { "x": 14, "y": 4 },
+      "enterDirection": "left",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 0, "y": 5 },
+      "destinationMap": "bossOneZone",
+      "destinationDirection": "left",
+      "destinationTile": { "x": 14, "y": 5 },
+      "enterDirection": "left",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 0, "y": 6 },
+      "destinationMap": "bossOneZone",
+      "destinationDirection": "left",
+      "destinationTile": { "x": 14, "y": 6 },
+      "enterDirection": "left",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 0, "y": 7 },
+      "destinationMap": "bossOneZone",
+      "destinationDirection": "left",
+      "destinationTile": { "x": 14, "y": 7 },
+      "enterDirection": "left",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 0, "y": 8 },
+      "destinationMap": "bossOneZone",
+      "destinationDirection": "left",
+      "destinationTile": { "x": 14, "y": 8 },
+      "enterDirection": "left",
+      "inTransition": "none",
+      "outTransition": "none"
+    }
+  ],
+
+  "bossOneZone": [
+    {
+      "location": { "x": 14, "y": 1 },
+      "destinationMap": "path",
+      "destinationDirection": "right",
+      "destinationTile": { "x": 0, "y": 1 },
+      "enterDirection": "right",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 14, "y": 2 },
+      "destinationMap": "path",
+      "destinationDirection": "right",
+      "destinationTile": { "x": 0, "y": 2 },
+      "enterDirection": "right",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 14, "y": 3 },
+      "destinationMap": "path",
+      "destinationDirection": "right",
+      "destinationTile": { "x": 0, "y": 3 },
+      "enterDirection": "right",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 14, "y": 4 },
+      "destinationMap": "path",
+      "destinationDirection": "right",
+      "destinationTile": { "x": 0, "y": 4 },
+      "enterDirection": "right",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 14, "y": 5 },
+      "destinationMap": "path",
+      "destinationDirection": "right",
+      "destinationTile": { "x": 0, "y": 5 },
+      "enterDirection": "right",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 14, "y": 6 },
+      "destinationMap": "path",
+      "destinationDirection": "right",
+      "destinationTile": { "x": 0, "y": 6 },
+      "enterDirection": "right",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 14, "y": 7 },
+      "destinationMap": "path",
+      "destinationDirection": "right",
+      "destinationTile": { "x": 0, "y": 7 },
+      "enterDirection": "right",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 14, "y": 8 },
+      "destinationMap": "path",
+      "destinationDirection": "right",
+      "destinationTile": { "x": 0, "y": 8 },
+      "enterDirection": "right",
+      "inTransition": "none",
+      "outTransition": "none"
+    }
+  ],
+  "town": [
+    {
+      "location": { "x": 0, "y": 5 },
+      "destinationMap": "playground",
+      "destinationDirection": "left",
+      "destinationTile": { "x": 14, "y": 5 },
+      "enterDirection": "left",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 0, "y": 6 },
+      "destinationMap": "playground",
+      "destinationDirection": "left",
+      "destinationTile": { "x": 14, "y": 6 },
+      "enterDirection": "left",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 0, "y": 7 },
+      "destinationMap": "playground",
+      "destinationDirection": "left",
+      "destinationTile": { "x": 14, "y": 7 },
+      "enterDirection": "left",
+      "inTransition": "none",
+      "outTransition": "none"
+    },
+    {
+      "location": { "x": 0, "y": 8 },
+      "destinationMap": "playground",
+      "destinationDirection": "left",
+      "destinationTile": { "x": 14, "y": 8 },
+      "enterDirection": "left",
+      "inTransition": "none",
+      "outTransition": "none"
+    }
+  ]
+}

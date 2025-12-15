@@ -1,0 +1,32 @@
+{
+  "bossOneZone": [
+    {
+      "type": "Doubt",
+      "position": { "x": -1.5, "y": 5 },
+      "maxHealth": 200,
+      "attack": 30,
+      "defense": 10,
+      "moves": ["Shadow Strike", "Intimidate"]
+    }
+  ],
+  "playground": [
+    {
+      "type": "Anxiety",
+      "position": { "x": 10, "y": 6 },
+      "maxHealth": 120,
+      "attack": 15,
+      "defense": 5,
+      "moves": ["Scream", "Panic"]
+    }
+  ],
+  "shatteredPeak": [
+    {
+      "type": "Gloom",
+      "position": { "x": 7, "y": 3 },
+      "maxHealth": 150,
+      "attack": 20,
+      "defense": 8,
+      "moves": ["Void Burst"]
+    }
+  ]
+}

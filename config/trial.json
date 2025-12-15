@@ -1,0 +1,5 @@
+{
+  "bossOneZone": [{ "x": 2, "y": 5, "fragmentId": 1 }],
+  "stair": [{ "x": 8, "y": 5, "fragmentId": 2 }],
+  "town": [{ "x": 5, "y": 8, "fragmentId": 3 }]
+}

@@ -1,0 +1,195 @@
+{
+  "images": [
+    {
+      "name": "tiles",
+      "path": "./assets/images/tiles.png",
+      "width": 256,
+      "height": 16064
+    },
+    {
+      "name": "red",
+      "path": "./assets/images/red.png",
+      "width": 128,
+      "height": 192
+    },
+    {
+      "name": "green",
+      "path": "./assets/images/green.png",
+      "width": 128,
+      "height": 192
+    },
+    {
+      "name": "brendan",
+      "path": "./assets/images/brendan.png",
+      "width": 128,
+      "height": 192
+    },
+    {
+      "name": "npcs",
+      "path": "./assets/images/npcs.png",
+      "width": 476,
+      "height": 5934
+    },
+    {
+      "name": "may",
+      "path": "./assets/images/may.png",
+      "width": 128,
+      "height": 192
+    },
+    {
+      "name": "title",
+      "path": "./assets/images/title.png",
+      "width": 512,
+      "height": 384
+    },
+    {
+      "name": "star",
+      "path": "./assets/images/star.png",
+      "width": 128,
+      "height": 32
+    },
+    {
+      "name": "playground",
+      "path": "./assets/images/playground.png",
+      "width": 480,
+      "height": 352
+    },
+    {
+      "name": "doubt-Idle",
+      "path": "./assets/images/enemy/Doubt/Idle.png",
+      "width": 256,
+      "height": 1785
+    },
+    {
+      "name": "doubt-Attack",
+      "path": "./assets/images/enemy/Doubt/Attack.png",
+      "width": 256,
+      "height": 2040
+    },
+    {
+      "name": "doubt-Hit",
+      "path": "./assets/images/enemy/Doubt/Hit.png",
+      "width": 256,
+      "height": 1020
+    },
+    {
+      "name": "doubt-Dead",
+      "path": "./assets/images/enemy/Doubt/Dead.png",
+      "width": 256,
+      "height": 1785
+    },
+    {
+      "name": "anxiety-Idle",
+      "path": "./assets/images/enemy/Anxiety/Idle.png",
+      "width": 256,
+      "height": 1020
+    },
+    {
+      "name": "anxiety-Attack",
+      "path": "./assets/images/enemy/Anxiety/Attack.png",
+      "width": 256,
+      "height": 3060
+    },
+    {
+      "name": "anxiety-Hit",
+      "path": "./assets/images/enemy/Anxiety/Hit.png",
+      "width": 256,
+      "height": 765
+    },
+    {
+      "name": "anxiety-Dead",
+      "path": "./assets/images/enemy/Anxiety/Dead.png",
+      "width": 256,
+      "height": 2295
+    },
+    {
+      "name": "gloom-idle",
+      "path": "./assets/images/enemy/Gloom/Idle.png",
+      "width": 256,
+      "height": 510
+    },
+    {
+      "name": "gloom-Attack",
+      "path": "./assets/images/enemy/Gloom/Attack.png",
+      "width": 256,
+      "height": 2805
+    },
+    {
+      "name": "gloom-Hit",
+      "path": "./assets/images/enemy/Gloom/Hit.png",
+      "width": 256,
+      "height": 765
+    },
+    {
+      "name": "gloom-Dead",
+      "path": "./assets/images/enemy/Gloom/Dead.png",
+      "width": 256,
+      "height": 2295
+    }
+  ],
+  "fonts": [
+    {
+      "name": "PowerRed",
+      "path": "./assets/fonts/PowerRed.ttf"
+    },
+    {
+      "name": "PowerRedBold",
+      "path": "./assets/fonts/PowerRedBold.ttf"
+    },
+    {
+      "name": "Pokemon",
+      "path": "./assets/fonts/Pokemon.ttf"
+    },
+    {
+      "name": "Tiny5",
+      "path": "./assets/fonts/Tiny5.ttf"
+    }
+  ],
+  "sounds": [
+    {
+      "name": "route",
+      "path": "./assets/sounds/music/route.mp3",
+      "size": 1,
+      "volume": 0.1,
+      "loop": true
+    },
+    {
+      "name": "title",
+      "path": "./assets/sounds/music/title.mp3",
+      "size": 1,
+      "volume": 0.1,
+      "loop": true
+    },
+    {
+      "name": "menu-open",
+      "path": "./assets/sounds/effects/menu-open.ogg",
+      "size": 1,
+      "volume": 0.2
+    },
+    {
+      "name": "player-bump",
+      "path": "./assets/sounds/effects/player-bump.ogg",
+      "size": 1,
+      "volume": 0.2
+    },
+    {
+      "name": "selection-choice",
+      "path": "./assets/sounds/effects/selection-choice.ogg",
+      "size": 5,
+      "volume": 0.2
+    },
+
+    {
+      "name": "victory",
+      "path": "./assets/sounds/effects/victory.wav",
+      "size": 1,
+      "volume": 0.2
+    },
+    {
+      "name": "save",
+      "path": "./assets/sounds/effects/save.wav",
+      "size": 1,
+      "volume": 0.1
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "playground": [
+    {
+      "character": "sister",
+      "firstSprite": { "x": 18, "y": 434 },
+      "totalSprites": 12,
+      "canMove": true,
+      "position": { "x": 3, "y": 6 },
+      "dialogue": "sisterDialogue"
+    }
+  ],
+  "town": [
+    {
+      "character": "elderRowan",
+      "firstSprite": { "x": 18, "y": 284 },
+      "totalSprites": 4,
+      "canMove": false,
+      "direction": 2,
+      "position": { "x": 8, "y": 4 },
+      "dialogue": "elderRowanDialogue"
+    }
+  ]
+}
